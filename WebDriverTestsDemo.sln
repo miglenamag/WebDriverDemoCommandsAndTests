@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDriverTestsDemo", "WebDriverTestsDemo\WebDriverTestsDemo.csproj", "{87FA631F-830A-44C9-83B4-DE5A90E94A5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDriverCommandsWikipediaDemo", "WebDriverTestsDemo\WebDriverCommandsWikipediaDemo.csproj", "{87FA631F-830A-44C9-83B4-DE5A90E94A5F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NunitWebDriverTests", "NunitWebDriverTests\NunitWebDriverTests.csproj", "{0464B738-FCDF-4B30-8920-CE598789B522}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitHubDemo", "GitHubDemo\GitHubDemo.csproj", "{08982CC8-3954-44B6-9BE2-4C1585E81FAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDriverCommandsGitHubDemo", "GitHubDemo\WebDriverCommandsGitHubDemo.csproj", "{08982CC8-3954-44B6-9BE2-4C1585E81FAB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebDriverCommandsDemo", "WebDriverCommandsDemo", "{F1F1E55B-BF6F-4A7A-BAD2-C92BC58DE4A2}"
 EndProject
