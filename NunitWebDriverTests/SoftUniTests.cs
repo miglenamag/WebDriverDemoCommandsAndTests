@@ -70,5 +70,18 @@ namespace NunitWebDriverTests
             //driver.Quit();
 
         }
+
+        [Test]
+        public void loginInvalidUser()
+        {
+            driver.FindElement(By.CssSelector(".softuni-btn-primary")).Click();
+            driver.FindElement(By.Id("username")).Click();
+            driver.FindElement(By.Id("username")).SendKeys("user");
+            driver.FindElement(By.Id("password-input")).Click();
+            driver.FindElement(By.Id("password-input")).SendKeys("asdfg");
+            driver.FindElement(By.CssSelector(".softuni-btn")).Click();
+            Assert.That(driver.FindElement(By.CssSelector("li")).Text, Is.EqualTo("Невалидно потребителско име или парола"));
+            driver.Close();
+        }
     }
 }
