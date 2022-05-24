@@ -7,7 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDriverTestsDemo", "WebDr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NunitWebDriverTests", "NunitWebDriverTests\NunitWebDriverTests.csproj", "{0464B738-FCDF-4B30-8920-CE598789B522}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubDemo", "GitHubDemo\GitHubDemo.csproj", "{08982CC8-3954-44B6-9BE2-4C1585E81FAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitHubDemo", "GitHubDemo\GitHubDemo.csproj", "{08982CC8-3954-44B6-9BE2-4C1585E81FAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebDriverCommandsDemo", "WebDriverCommandsDemo", "{F1F1E55B-BF6F-4A7A-BAD2-C92BC58DE4A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NUnitSeleniumTests", "NUnitSeleniumTests", "{0B207E42-C73E-493A-8ECF-E3D1A03FAB12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NunitWebDriverTests1", "TestProject1\NunitWebDriverTests1.csproj", "{8F2105FD-AC86-4280-BA22-7443BFEBBDF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +33,19 @@ Global
 		{08982CC8-3954-44B6-9BE2-4C1585E81FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08982CC8-3954-44B6-9BE2-4C1585E81FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08982CC8-3954-44B6-9BE2-4C1585E81FAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F2105FD-AC86-4280-BA22-7443BFEBBDF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F2105FD-AC86-4280-BA22-7443BFEBBDF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F2105FD-AC86-4280-BA22-7443BFEBBDF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F2105FD-AC86-4280-BA22-7443BFEBBDF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{87FA631F-830A-44C9-83B4-DE5A90E94A5F} = {F1F1E55B-BF6F-4A7A-BAD2-C92BC58DE4A2}
+		{0464B738-FCDF-4B30-8920-CE598789B522} = {0B207E42-C73E-493A-8ECF-E3D1A03FAB12}
+		{08982CC8-3954-44B6-9BE2-4C1585E81FAB} = {F1F1E55B-BF6F-4A7A-BAD2-C92BC58DE4A2}
+		{8F2105FD-AC86-4280-BA22-7443BFEBBDF0} = {0B207E42-C73E-493A-8ECF-E3D1A03FAB12}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BCA279CB-E0BC-4729-9F0F-01EAB250BBFC}

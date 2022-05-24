@@ -6,17 +6,32 @@ namespace NunitWebDriverTests
 {
     public class SoftUniTests
     {
-        [SetUp]
-        public void Setup()
+        private WebDriver driver;
+
+        [OneTimeSetUp]
+        public void OpenBrowserAndNavigate()
         {
+            // Arrange
+            driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
+            driver.Url = "https://softuni.bg";
+            
         }
+
+        [OneTimeTearDown]
+        public void CloseBrowser()
+        {
+            driver.Quit();
+
+        }
+
 
         [Test]
         public void Test_AssertMainTitle()
         {
 
             // Arrange
-            var driver = new ChromeDriver();
+            // var driver = new ChromeDriver();
 
 
             //Act
@@ -27,27 +42,32 @@ namespace NunitWebDriverTests
             Assert.That(driver.Title, Is.EqualTo(expectedTitle));
 
 
-            driver.Quit();
+            //driver.Quit();
 
         }
+
+        [Test]
         public void Test_AssertAboutUsTitle()
         {
 
             // Arrange
-            var driver = new ChromeDriver();
+            //var driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
-
+            
 
             //Act
-            driver.Url = "https://softuni.bg";
-            var ZaNasElement = driver.FindElement(By.CssSelector("header-nav > div.toggle-nav.toggle-holder.toggle-active > ul > li:nth-child(1) > a > span"));
+           //driver.Url = "https://softuni.bg";
+           
+            var zaNasElement = driver.FindElement(By.CssSelector("li:nth-of-type(1) > .nav-link > .cell"));
+            zaNasElement.Click();
+
             string expectedTitle = "За нас - Софтуерен университет";
 
             //Assert
             Assert.That(driver.Title, Is.EqualTo(expectedTitle));
 
 
-            driver.Quit();
+            //driver.Quit();
 
         }
     }
