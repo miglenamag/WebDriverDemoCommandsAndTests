@@ -53,19 +53,24 @@ namespace NunitWebDriverTests
             // Arrange
             //var driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
-            
+            driver.Navigate().GoToUrl("https://softuni.bg");
+
 
             //Act
-           //driver.Url = "https://softuni.bg";
-           
-            var zaNasElement = driver.FindElement(By.CssSelector("li:nth-of-type(1) > .nav-link > .cell"));
+            //driver.Url = "https://softuni.bg";
+
+            //var zaNasElement = driver.FindElement(By.CssSelector("li:nth-of-type(1) > .nav-link > .cell"));
+
+            var zaNasElement = driver.FindElement(By
+                .XPath("//nav[@id='header-nav']/div[1]/ul//a[@href='/about']/span[@class='cell']"));
+
             zaNasElement.Click();
 
             string expectedTitle = "За нас - Софтуерен университет";
 
             //Assert
             Assert.That(driver.Title, Is.EqualTo(expectedTitle));
-
+           
 
             //driver.Quit();
 
@@ -81,7 +86,8 @@ namespace NunitWebDriverTests
             driver.FindElement(By.Id("password-input")).SendKeys("asdfg");
             driver.FindElement(By.CssSelector(".softuni-btn")).Click();
             Assert.That(driver.FindElement(By.CssSelector("li")).Text, Is.EqualTo("Невалидно потребителско име или парола"));
-            driver.Close();
+           
+            // driver.Close();
         }
     }
 }
