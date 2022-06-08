@@ -37,7 +37,7 @@ using OpenQA.Selenium.DevTools.V100.SystemInfo;
             //driver.Manage().Window.Maximize();
 
             // Act
-            var expectedTitle = "GitHub: Where the world builds software · GitHub";
+            var expectedTitle = "GitHub: Where the world builds software Â· GitHub";
 
             // Assert
             Assert.That(driver.Title, Is.EqualTo(expectedTitle));
@@ -64,7 +64,7 @@ using OpenQA.Selenium.DevTools.V100.SystemInfo;
             
             var teamElement = driver.FindElement(By.CssSelector("li:nth-of-type(2) > .HeaderMenu-link.d-block.d-lg-inline-block.no-underline.py-3"));            // Assert
             teamElement.Click();
-            string expectedTitle = "GitHub for teams · Build like the best teams on the planet · GitHub";
+            string expectedTitle = "GitHub for teams Â· Build like the best teams on the planet Â· GitHub";
             Assert.That(driver.Title, Is.EqualTo(expectedTitle));
            
 
@@ -85,7 +85,7 @@ using OpenQA.Selenium.DevTools.V100.SystemInfo;
         
 
         // Assert
-        Assert.That(driver.Title, Is.EqualTo("Search · WebDriverTestsDemo · GitHub"));
+        Assert.That(driver.Title, Is.EqualTo("Search Â· WebDriverTestsDemo Â· GitHub"));
 
         //driver.Quit();
 
