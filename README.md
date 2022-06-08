@@ -1,4 +1,4 @@
-# WebDriverTestsDemo
+#WebDriverDemoCommandsAndTests
 This project contains Selenium Web Driver Commands Demo and Tests as my practice for QA Automation Course at Software University.
 
 Included demo commands for automatic control of Google Chrome browser:
